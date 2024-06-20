@@ -1,113 +1,95 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<link href="index.css" rel="stylesheet">
-		<title>RESUME</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-	</head>
-
-	<body>
-		<header id="header">
-			<!-- resume header with your name and title -->
+<head>
+<link rel="stylesheet"  href="./style.css/">
+<meta charset=”UTF-8”>
+<title>Portfolio</title>
+</head>
+<body>
+    
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <div class="image-container">
+        <div class="navbar">
+            <a href="#Work">Learnings</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Get in touch</a>
             
-			<h1>Rhythm Narang</h1>
-           
-            <h2 id="headingg">Determined engineer with splendid knowledge of programming languages like C/C++, Java & Python. Seeks to expedite my technical skills and gain exposure to new tools by getting experience as a Software Engineer.</h2>
+        </div>
+    <img src="https://t3.ftcdn.net/jpg/03/53/28/08/240_F_353280884_oyeOLzk0EyvfC4pvixbvcfA4s745SaX6.jpg" width="1550" height="900"/>
+    <div class="text-overlay">I am RHYTHM  
+        <br>
+        <span id="element"></span>
+
+        
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      
+    
+        <script>
+          var typed = new Typed('#element', {
+            strings: ['<i>Hey</i> there', ' I am a coder', 'Web Developer','Learner', 'Explorer', 'Foodie','Creative', 'Positive','Reliable'],
+            typeSpeed: 100,
+          });
+        </script>
+    </div>
+    
+    
+   
+
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <div class="personal-image">
+            <img src="https://media.licdn.com/dms/image/D5603AQEySKRGlr9xSQ/profile-displayphoto-shrink_800_800/0/1705593514063?e=1724284800&v=beta&t=R_2XSeBYEVTze5NEHOFPG1uNN4HicFNrdGV0uyakP0M" alt="Your Name">
+        </div>
+        <p>Passionate Engineer with strong expertise in C/C++, Python, and Java. Actively involved in open source development through GirlScript Summer of Code 2024.Currently advancing my knowledge in Machine Learning via Coursera and honing problem-solving skills on LeetCode, aiming to excel in emerging
+            technologies within a reputable tech industry.</p>
+        
+    </div>
+    <div id="Work" class="section">
+        <h2>Learnings and Experiences</h2>
+        <div class="work-experience">
+            <h3>Microsoft Learn Student Ambassador</h3>
+            <p>January 2024 - present</p>
+            <ul>
+                <li>Helped peers develop Cloud Computing Skills using Microsoft technologies</li>
             
-        </header>
-        <section id="details">
-            <ol>
-                <li>Email: <a href="mailto:rhythmnarang11@gmail.com" >rhythmnarang11@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/rhythm-narang-379583219/" >LinkedIn</a></li>
-                <li><a href="https://github.com/rhythmnarang1">Github</a></li>
-                 <li>+91-7906865126</li>
-        </ol>
-            <h2>
-                
-                
-                </h2>
-            <!-- contact info including social media -->
-        </section>
-		<main>
-            
-			<article id="mainLeft">
-				
-				<section>
-                    <h4> SKILLS</h4>
-					<h2>
-                        <ul><li> Programming Languages- C/C++, Java & Python </li>
-                            <li>Object-Oriented Programming</li>
-                             <li>Data Structures and Algorithms</li>
-                            <li>Web Development</li>
-                           <li> Operating Systems</li>
-                            <li>Javascript</li>
-                           
-                        </ul>
-                        </h2>
-					<!-- your skills -->
-				</section>
-				<section>
-                    <h4> EDUCATION</h4>
-					<h2>
-                        <li id="bold">Thapar Institute of Engineering and Technology, Patiala
-                            
-                       <p id="sub"> B.E. in Computer Engineering (2022-present)
-                        </p>
-                        </li>
-                        <li id="bold"> Saraswati Vihar Senior Secondary School(Intermediate)
-                        <p id="sub">Percentage- 90.0% (Among Top 1% students of my batch)</p>
-                        </li>
-                        <li id="bold">Saraswati Vihar Senior Secondary School(Matriculation)
-                        <p id="sub">Percentage- 95.2% (School Topper)</p>
-                        </li>
-                        </h2>
-					<!-- your education -->
-				</section>            
-			</article>
-			<article id="mainRight">
-				
-                
-				<section>
-                    <h4> WORK EXPERIENCE</h4>
-					<h2><li id="bold">Microsoft Learn Student Ambassador</p>
-                        <p id="sub">Attained Beta stage proficiency through learning journeys in  domains such as Microsoft Azure, specializing in Artificial Intelligence (AI) and Machine Learning (ML)
-                        </p>    
-                    </li>
-                        <li id="bold">
-                        Software Engineering Virtual Internship
-                        (JP Morgan Chase & Co. (January 4th, 2024))
-                        
-                       <p id="sub">Dev environment setup by installing python, forking and cloning the repository,
-                       Used Perspective to generate a live graph to display data feed
-                    </p>
-                    </li>
-                        </h2>
-					<!-- your work experience -->
-                    <h4>CERTIFICATES</h4>
-                    <li id="sub"><a href="https://drive.google.com/file/d/1eVz1igp1Wg3eC91lTwDu2tibewTeORXB/view?usp=sharing" >Mobile App development offered through Experiential Learning Center, TIET (2024)</a></li>
-                    <li id="sub"> <a href="">Internshala Student Partner (2023)</a></li>
-                    <li id="sub"> <a href="">Event head</a> </li>
-                    <li id="sub"><a href="https://drive.google.com/file/d/13LriCXH8FrEiM3lmE9TrdGoWWG5SW-Ej/view?usp=sharing">DIY with Arduino offered through Experiential Learning Center, TIET (2023)</a></li>
-                    <li id="sub"><a href="https://d8it4huxumps7.cloudfront.net/lambda-pdfs/certificate-images/c8240c5e-07bc-46c5-aadb-7dbdb8e49fa7.pdf">Flipkart Grid 5.0- Software Development Track (2023)</a>
-                    </li>
+                <li>Attained Beta stage proficiency through learning journeys in domains such as Microsoft Azure, special￾izing in Artificial Intelligence (AI) and Machine Learning (ML).</li>
+            </ul>
+        </div>
+        <div class="work-experience">
+            <h3>Machine Learning Internship</h3>
+        
+            <p>June 2024 - present</p>
+            <ul>
+                <li>Working on projects like a movie recommendation system and an iris classifier.</li>
+                <li>Gaining hands-on experience in model building, data analysis, and solving real-world problems through
+                    applied machine learning techniques.</li>
 
-                    
-
-
-                   
-				</section>
-                <section> 
-
-                    <h4> LANGUAGES</h4>
-                    
-                    <li id="sub">English, Hindi & Punjabi</li>
-                </section>
-                <section>
-                    <h4> INTERESTS AND TRAITS</h4>
-                    <li id="sub"> Publishing Technical Content, Aptitude, Socialising, Bhangra(a dance form), Communication Skills, Event Management</li>
-                </section>
-
-			</article>
-		</main>
-	</body>
+            </ul>
+        </div>
+        <div class="work-experience">
+            <h3>Software Engineering Virtual Internship(JP Morgan Chase and Co.)</h3>
+        
+            <p>January 2024</p>
+            <ul>
+                <li>Worked in Javascript.</li>
+                <li>Dev environment setup by installing python, forking and cloning the repository.</li>
+                <li>Used Perspective to generate a live graph to display data feed.</li>
+            </ul>
+        </div>
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, please use the links below:</p>
+        <ul class="contact-list">
+            <li><a href="https://www.linkedin.com/in/rhythm-narang-379583219/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/rhythmnarang1" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="mailto:narangrhythm.nr@gmail.com"><i class="fas fa-envelope"></i> Send Feedback via Email</a></li>
+        </ul>
+    </div>
+   
+      
+ 
+</div>
+</body>
 </html>
+
