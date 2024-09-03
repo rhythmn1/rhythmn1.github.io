@@ -1,8 +1,21 @@
+/* Apply box-sizing globally to include padding and borders within dimensions */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    max-width: 100vw; /* Prevent overflow */
+    overflow-x: hidden; /* Disable horizontal scroll */
 }
 
 .image-container {
@@ -24,7 +37,7 @@ html, body {
     font-size: 4em;
     text-shadow: 2px 2px 4px rgba(228, 240, 246, 0.7);
     text-align: center;
-    padding: 0px;
+    padding: 0;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -53,13 +66,15 @@ html, body {
 }
 
 .section {
+    max-width: 1200px; /* Set a max-width for better control */
+    margin: 20px auto; /* Center sections horizontally */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(211, 231, 249, 0.8);
-    position: relative;
     color: #005582;
     font-size: 20px;
+    position: relative;
 }
 
 .section::after {
@@ -97,7 +112,7 @@ html, body {
 
 .section h2 {
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .contact-list {
@@ -137,7 +152,9 @@ html, body {
     width: 400px;
     border-radius: 40%;
     margin-bottom: 20px;
-    margin-left: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Centered horizontally */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -152,16 +169,21 @@ html, body {
     float: left;
     margin-right: 80px;
 }
-.line{
-    margin-left:700px;
+
+.line {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Ensure it centers within the parent */
 }
+
 .para {
-    margin-top: -50px;
+    margin-top: 0;
     padding-top: 50px;
     font-size: 28px;
     line-height: 1.8;
     max-width: 700px;
-    margin-left:550px;
+    margin-left: auto;
+    margin-right: auto; /* Centered horizontally */
     text-align: center;
     position: relative;
     z-index: 1;
